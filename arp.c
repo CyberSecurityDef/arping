@@ -52,8 +52,8 @@ void arping(const char *ipaddr, LONGLONG count){
     ULONGLONG send_count = 0;
     ULONGLONG recv_count = 0;
     LARGE_INTEGER start_time;
-	LARGE_INTEGER end_time;
-	LARGE_INTEGER cpu_frq;
+    LARGE_INTEGER end_time;
+    LARGE_INTEGER cpu_frq;
     GetBestInterface(dst, &adapter);
     get_ip(&src, adapter);
     SetConsoleCtrlHandler((PHANDLER_ROUTINE)handler, true);
