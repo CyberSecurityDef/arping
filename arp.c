@@ -12,7 +12,7 @@
 
 static bool ping = true;
 
-static BOOL handler(DWORD type){
+static bool handler(DWORD type){
     if(CTRL_C_EVENT == type){
         ping = false;
         return true;
